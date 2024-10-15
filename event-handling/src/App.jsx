@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { category, item } from "./Data"; 
 import Product from "./Product";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
