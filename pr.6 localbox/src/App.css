@@ -1,0 +1,174 @@
+/* General container for the app */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Form container */
+.form-container {
+  margin-bottom: 30px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h4 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+/* Input fields */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  background-color: #ecf0f1;
+  color: #34495e;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  background-color: #ffffff;
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+/* Task list */
+.task-list {
+  margin-top: 20px;
+}
+
+.task-card {
+  background-color: #f7f9fb;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #dfe6e9;
+  margin-bottom: 20px;
+}
+
+.task-details h5 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.task-details h6 {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.task-details p {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #f39c12;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+/* No tasks message */
+.no-tasks {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
