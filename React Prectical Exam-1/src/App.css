@@ -1,0 +1,13 @@
+/* Root app container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6f7ff;
+  min-height: 100vh;
+  padding: 20px;
+}
+body{
+  background-color: #e6f7ff;
+  margin:0 auto;
+}

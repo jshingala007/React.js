@@ -1,0 +1,104 @@
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6; /* Slightly increased for better readability */
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #1e1e1e; /* Darker shade for better contrast */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth theme transitions */
+}
+
+a {
+  font-weight: 500;
+  color: #4fa3ff; /* Softer blue for accessibility */
+  text-decoration: none;
+  position: relative; /* Required for underline animation */
+}
+a:hover {
+  color: #61c0ff; /* Slightly lighter blue on hover */
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #4fa3ff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+a:hover::after {
+  transform: scaleX(1);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #121212, #1e1e1e); /* Smooth gradient for depth */
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #ffffff; /* Bright text for visibility */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow for definition */
+}
+
+button {
+  border-radius: 12px; /* Rounded for a friendly, modern feel */
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #333333;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Depth effect */
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.25s, background-color 0.25s;
+}
+button:hover {
+  transform: scale(1.05); /* Slightly enlarges for interactivity */
+  background-color: #4fa3ff;
+  border-color: #61c0ff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #2b2b2b;
+    background-color: #f0f0f0; /* Neutral light background */
+  }
+  body {
+    background: linear-gradient(135deg, #ffffff, #e6e6e6); /* Gradient for light mode */
+  }
+  a {
+    color: #3b82f6;
+  }
+  a:hover {
+    color: #2563eb;
+  }
+  button {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow in light mode */
+  }
+}

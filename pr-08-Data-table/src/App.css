@@ -1,0 +1,67 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for better contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 12px; /* Smooth edges */
+}
+
+.logo {
+  height: 7em; /* Slightly larger for better visibility */
+  padding: 1em;
+  border-radius: 50%; /* Rounded logo for a modern look */
+  background-color: #ffffff; /* White background for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Depth effect */
+  transition: transform 300ms ease, filter 300ms ease, background-color 300ms ease;
+  will-change: transform, filter, background-color;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Enlarges slightly on hover */
+  filter: drop-shadow(0 0 2em #646cffaa);
+  background-color: #f0f0f0; /* Subtle change in background on hover */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 15s linear; /* Reduced duration for a more dynamic effect */
+  }
+}
+
+.card {
+  padding: 2em;
+  margin: 1em auto;
+  max-width: 600px; /* Constrain card width for better readability */
+  background-color: #ffffff; /* Clean white background */
+  border: 1px solid #eaeaea; /* Subtle border for definition */
+  border-radius: 12px; /* Smooth corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Depth effect */
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.read-the-docs {
+  color: #555; /* Darker gray for better contrast */
+  font-size: 1rem; /* Adjust font size for readability */
+  text-align: left; /* Align text to the left for a professional look */
+  margin-top: 1em;
+}
